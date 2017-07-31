@@ -1,5 +1,7 @@
 
 
+![](http://fitzeng.org/2017/07/31/robolectric/robolectric-cn.png)
+
 在 Android 模拟器和设备上运行测试是很慢的!构建,部署和启动应用通常会花费一分钟甚至更多.这不是做测试驱动开发.肯定有更好的方法.
 
 [Robolectric](http://robolectric.org/) 是一个单元测试工具, 去除 Android SDK Jar 包. 所以你能够(test-drive)你的 Android 应用程序的开发. 测试程序在你工作站的 JVM 内运行只需要几秒. 你可以用 Robolectric 这样写测试文件:

@@ -23,4 +23,3 @@
     * [Java文档](http://robolectric.org/javadoc/latest/)
     * [问题](https://github.com/robolectric/robolectric/issues/)
 * [关于我](README.md)
-

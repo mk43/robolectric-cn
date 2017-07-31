@@ -56,6 +56,3 @@ Activity activity = Robolectric.buildActivity(MyAwesomeActivity.class)
 原来在一个真正的 Android 应用, 在调用 `onCreate()` 之后的某个时刻, Activity 的视图层次结构不会添加到 Window. 直到发生这种情况, 否则Activity 的视图不会报告为可见. 这意味着你不能点击它们(其他意想不到的行为). 在 `onPostResume()` 调用之后, 设备或者模拟器上的 Activity 的层次结构才会添加到 Window. 而不是对何时更新可见性做出假设, Robolectric 把权力放在写测试文件的开发者手里.
 
 所以, 什么时候调用它? 当你和在 Activity 里的视图交互时. 像 `Robolectric.clickOn()` 调用条件是视图是可见的并且正确调用函数. 你应该在调用 `create()` 之后调用 `visible()` 函数.  
-
-
-
