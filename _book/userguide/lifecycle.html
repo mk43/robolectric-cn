@@ -1,0 +1,583 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>驱动活动生命周期 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="addon.html" />
+    
+    
+    <link rel="prev" href="qr.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../HOME.html">
+            
+                <a href="../HOME.html">
+            
+                    
+                    主页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    配置
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../setup/gettingstarted.html">
+            
+                <a href="../setup/gettingstarted.html">
+            
+                    
+                    开始
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../setup/firsttest.html">
+            
+                <a href="../setup/firsttest.html">
+            
+                    
+                    编写你的第一个测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    用户指南
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="config.html">
+            
+                <a href="config.html">
+            
+                    
+                    配置Robolectric
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="qr.html">
+            
+                <a href="qr.html">
+            
+                    
+                    使用资源限定符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.3" data-path="lifecycle.html">
+            
+                <a href="lifecycle.html">
+            
+                    
+                    驱动活动生命周期
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="addon.html">
+            
+                <a href="addon.html">
+            
+                    
+                    使用附加包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="lib.html">
+            
+                <a href="lib.html">
+            
+                    
+                    使用库资源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="bestpractice.html">
+            
+                <a href="bestpractice.html">
+            
+                    
+                    最佳实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    定制
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../customize/extend.html">
+            
+                <a href="../customize/extend.html">
+            
+                    
+                    扩展Robolectric
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../customize/shadows.html">
+            
+                <a href="../customize/shadows.html">
+            
+                    
+                    创建自定义shadows
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../customize/testrunner.html">
+            
+                <a href="../customize/testrunner.html">
+            
+                    
+                    自定义Test Runner
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    贡献
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../contribute/guide.html">
+            
+                <a href="../contribute/guide.html">
+            
+                    
+                    贡献指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    资源
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" >
+            
+                <a target="_blank" href="https://github.com/robolectric/robolectric/">
+            
+                    
+                    GitHub
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" >
+            
+                <a target="_blank" href="https://github.com/robolectric/robolectric/releases/">
+            
+                    
+                    发布信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" >
+            
+                <a target="_blank" href="http://robolectric.org/javadoc/latest/">
+            
+                    
+                    Java文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" >
+            
+                <a target="_blank" href="https://github.com/robolectric/robolectric/issues/">
+            
+                    
+                    问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    关于我
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >驱动活动生命周期</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="&#x9A71;&#x52A8;&#x6D3B;&#x52A8;&#x751F;&#x547D;&#x5468;&#x671F;">&#x9A71;&#x52A8;&#x6D3B;&#x52A8;&#x751F;&#x547D;&#x5468;&#x671F;</h2>
+<p>&#x5728;  Robolectric 2.2 &#x7248;&#x672C;&#x4E4B;&#x524D;, &#x5927;&#x591A;&#x6570;&#x6D4B;&#x8BD5;&#x521B;&#x5EFA; Activity &#x90FD;&#x662F;&#x76F4;&#x63A5;&#x8C03;&#x7528;&#x6784;&#x9020;&#x51FD;&#x6570;, (<code>new MyActivity()</code>)&#x7136;&#x540E;&#x624B;&#x52A8;&#x8C03;&#x7528;&#x751F;&#x547D;&#x5468;&#x671F;&#x65B9;&#x6CD5;, &#x4F8B;&#x5982; <code>onCreate()</code>. &#x8FD8;&#x5E7F;&#x6CDB;&#x4F7F;&#x7528;&#x7684;&#x662F; <code>ShadowActivity</code> &#x4E2D;&#x7684;&#x4E00;&#x7EC4;&#x65B9;&#x6CD5;(&#x4F8B;&#x5982; <code>ShadowActivity.callOnCreate()</code> ), &#x5B83;&#x4EEC;&#x662F; <code>ActivityController</code> &#x7684;&#x524D;&#x8EAB;.</p>
+<p>&#x592A;&#x6DF7;&#x4E71;&#x4E86;. Robolectric API <code>ActivityController</code> &#x6539;&#x53D8;&#x4E86;&#x8FD9;&#x4E00;&#x5207;. &#x5B83;&#x7684;&#x76EE;&#x6807;&#x662F;&#x53BB;&#x6A21;&#x62DF; Android &#x521B;&#x5EFA; Activity &#x5E76;&#x4E14;&#x901A;&#x8FC7;&#x751F;&#x547D;&#x5468;&#x671F;&#x9A71;&#x52A8;&#x5B83;&#x4EEC;.</p>
+<p><code>ActivityController</code> &#x662F;&#x4E00;&#x4E2A;&#x6D41;&#x7545;&#x7684; API, &#x5728; Robolectric 2.0 &#x5F15;&#x5165;, &#x5728; 2.2 &#x4E4B;&#x540E;&#x88AB;&#x9700;&#x8981;. &#x9664;&#x4E86;&#x8C03;&#x7528; <code>onCreate()</code> &#x4E4B;&#x7C7B;&#x7684;&#x65B9;&#x6CD5;, &#x5B83;&#x8FD8;&#x53EF;&#x4EE5;&#x786E;&#x4FDD;&#x6D3B;&#x52A8;&#x7684;&#x5185;&#x90E8;&#x72B6;&#x6001;&#x4E0E;&#x751F;&#x547D;&#x5468;&#x671F;&#x4E00;&#x81F4;. &#x8FD9;&#x5305;&#x62EC;&#x5C06; Activity &#x9644;&#x52A0;&#x5230; Window &#x5E76;&#x4F7F;&#x7CFB;&#x7EDF;&#x670D;&#x52A1;&#x50CF; <code>LayoutInflater</code> &#x4E00;&#x6837;&#x53EF;&#x7528;. </p>
+<h2 id="&#x73B0;&#x5728;&#x6211;&#x8BE5;&#x600E;&#x4E48;&#x505A;">&#x73B0;&#x5728;&#x6211;&#x8BE5;&#x600E;&#x4E48;&#x505A;?</h2>
+<p>&#x4F60;&#x4E0D;&#x7528;&#x76F4;&#x63A5;&#x521B;&#x5EFA;&#x4E00;&#x4E2A; <code>ActivityController</code> &#x800C;&#x662F;&#x4F7F;&#x7528; <code>Robolectric.buildActivity()</code>. &#x5BF9;&#x4E8E;&#x5927;&#x591A;&#x6570;&#x53EA;&#x9700;&#x8981;&#x521D;&#x59CB;&#x5316; Activity &#x7684;&#x57FA;&#x672C;&#x6D4B;&#x8BD5;, &#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E0B;&#x9762;&#x8FD9;&#x884C;&#x4EE3;&#x7801;: </p>
+<pre><code class="lang-java">Activity activity = Robolectric.buildActivity(MyAwesomeActivity.class).create().get();
+</code></pre>
+<p>&#x8FD9;&#x5C06;&#x4F1A;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684; <code>MyAwesomeActivity</code> &#x5B9E;&#x4F8B;&#x5E76;&#x4E14;&#x8C03;&#x7528;&#x751F;&#x547D;&#x5468;&#x671F;&#x7684; <code>onCreate()</code>&#x65B9;&#x6CD5;.</p>
+<p>&#x5982;&#x679C;&#x4F60;&#x60F3;&#x7740;&#x68C0;&#x6D4B;&#x4E00;&#x4E9B;&#x5728; <code>onResume()</code> &#x800C;&#x4E0D;&#x662F; <code>onCreate()</code> &#x65F6;&#x53D1;&#x751F;&#x7684;&#x4E8B;&#x4EF6;&#x8BE5;&#x600E;&#x4E48;&#x529E;? &#x7B80;&#x5355;!</p>
+<pre><code class="lang-java">ActivityController controller = Robolectric.buildActivity(MyAwesomeActivity.class).create().start();
+Activity activity = controller.get();
+<span class="hljs-comment">// assert that something hasn&apos;t happened</span>
+activityController.resume();
+<span class="hljs-comment">// assert it happened!</span>
+</code></pre>
+<p>&#x76F8;&#x4F3C;&#x7684;&#x65B9;&#x6CD5;&#x8FD8;&#x6709; <code>start()</code>, <code>pause()</code>, <code>stop()</code> &#x548C; <code>destory()</code>. &#x6240;&#x4EE5;, &#x5982;&#x679C;&#x4F60;&#x60F3;&#x6D4B;&#x8BD5;&#x5B8C;&#x6574;&#x7684;&#x521B;&#x5EFA;&#x751F;&#x547D;&#x5468;&#x671F;: </p>
+<pre><code class="lang-java">Activity activity = Robolectric.buildActivity(MyAwesomeActivity.class).create().start().resume().visible().get();
+</code></pre>
+<p>&#x4F60;&#x53EF;&#x4EE5;&#x6A21;&#x62DF;&#x7528; intent &#x5F00;&#x542F;&#x4E00;&#x4E2A; Activity.</p>
+<pre><code class="lang-java">Intent intent = <span class="hljs-keyword">new</span> Intent(Intent.ACTION_VIEW);
+Activity activity = Robolectric.buildActivity(MyAwesomeActivity.class).withIntent(intent).create().get();
+</code></pre>
+<p>... &#x6216;&#x8005;&#x6062;&#x590D;&#x4FDD;&#x5B58;&#x7684;&#x5B9E;&#x4F8B;&#x72B6;&#x6001;</p>
+<pre><code class="lang-java">Bundle savedInstanceState = <span class="hljs-keyword">new</span> Bundle();
+Activity activity = Robolectric.buildActivity(MyAwesomeActivity.class)
+    .create()
+    .restoreInstanceState(savedInstanceState)
+    .get();
+</code></pre>
+<p>&#x67E5;&#x770B;<a href="http://robolectric.org/javadoc/latest/org/robolectric/util/ActivityController.html" target="_blank"><code>ActivityController</code> Java &#x6587;&#x6863;</a> &#x53BB;&#x4E86;&#x89E3;&#x66F4;&#x591A;&#x5BF9;&#x4F60;&#x6D4B;&#x8BD5;&#x53EF;&#x7528;&#x7684;&#x516C;&#x5F00;&#x65B9;&#x6CD5;.</p>
+<h2 id="&#x7B49;&#x4E0B;-visible-&#x662F;&#x4E0D;&#x662F;&#x591A;&#x4F59;&#x7684;">&#x7B49;&#x4E0B;, <code>visible()</code> &#x662F;&#x4E0D;&#x662F;&#x591A;&#x4F59;&#x7684;?</h2>
+<p>&#x539F;&#x6765;&#x5728;&#x4E00;&#x4E2A;&#x771F;&#x6B63;&#x7684; Android &#x5E94;&#x7528;, &#x5728;&#x8C03;&#x7528; <code>onCreate()</code> &#x4E4B;&#x540E;&#x7684;&#x67D0;&#x4E2A;&#x65F6;&#x523B;, Activity &#x7684;&#x89C6;&#x56FE;&#x5C42;&#x6B21;&#x7ED3;&#x6784;&#x4E0D;&#x4F1A;&#x6DFB;&#x52A0;&#x5230; Window. &#x76F4;&#x5230;&#x53D1;&#x751F;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;, &#x5426;&#x5219;Activity &#x7684;&#x89C6;&#x56FE;&#x4E0D;&#x4F1A;&#x62A5;&#x544A;&#x4E3A;&#x53EF;&#x89C1;. &#x8FD9;&#x610F;&#x5473;&#x7740;&#x4F60;&#x4E0D;&#x80FD;&#x70B9;&#x51FB;&#x5B83;&#x4EEC;(&#x5176;&#x4ED6;&#x610F;&#x60F3;&#x4E0D;&#x5230;&#x7684;&#x884C;&#x4E3A;). &#x5728; <code>onPostResume()</code> &#x8C03;&#x7528;&#x4E4B;&#x540E;, &#x8BBE;&#x5907;&#x6216;&#x8005;&#x6A21;&#x62DF;&#x5668;&#x4E0A;&#x7684; Activity &#x7684;&#x5C42;&#x6B21;&#x7ED3;&#x6784;&#x624D;&#x4F1A;&#x6DFB;&#x52A0;&#x5230; Window. &#x800C;&#x4E0D;&#x662F;&#x5BF9;&#x4F55;&#x65F6;&#x66F4;&#x65B0;&#x53EF;&#x89C1;&#x6027;&#x505A;&#x51FA;&#x5047;&#x8BBE;, Robolectric &#x628A;&#x6743;&#x529B;&#x653E;&#x5728;&#x5199;&#x6D4B;&#x8BD5;&#x6587;&#x4EF6;&#x7684;&#x5F00;&#x53D1;&#x8005;&#x624B;&#x91CC;.</p>
+<p>&#x6240;&#x4EE5;, &#x4EC0;&#x4E48;&#x65F6;&#x5019;&#x8C03;&#x7528;&#x5B83;? &#x5F53;&#x4F60;&#x548C;&#x5728; Activity &#x91CC;&#x7684;&#x89C6;&#x56FE;&#x4EA4;&#x4E92;&#x65F6;. &#x50CF; <code>Robolectric.clickOn()</code> &#x8C03;&#x7528;&#x6761;&#x4EF6;&#x662F;&#x89C6;&#x56FE;&#x662F;&#x53EF;&#x89C1;&#x7684;&#x5E76;&#x4E14;&#x6B63;&#x786E;&#x8C03;&#x7528;&#x51FD;&#x6570;. &#x4F60;&#x5E94;&#x8BE5;&#x5728;&#x8C03;&#x7528; <code>create()</code> &#x4E4B;&#x540E;&#x8C03;&#x7528; <code>visible()</code> &#x51FD;&#x6570;.  </p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="qr.html" class="navigation navigation-prev " aria-label="Previous page: 使用资源限定符">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="addon.html" class="navigation navigation-next " aria-label="Next page: 使用附加包">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"驱动活动生命周期","level":"1.3.3","depth":2,"next":{"title":"使用附加包","level":"1.3.4","depth":2,"path":"userguide/addon.md","ref":"userguide/addon.md","articles":[]},"previous":{"title":"使用资源限定符","level":"1.3.2","depth":2,"path":"userguide/qr.md","ref":"userguide/qr.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"userguide/lifecycle.md","mtime":"2017-07-30T05:06:44.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-07-31T02:59:18.798Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
